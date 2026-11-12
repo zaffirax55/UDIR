@@ -8,7 +8,7 @@
   <title>UDIR — Universal Digital Identity Reader</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="app.js"></script>
 </head>
@@ -16,9 +16,10 @@
   <a class="skip" href="#main">Skip to content</a>
   <div class="status-strip"><span>Product concept</span><span class="pulse"></span><span>In development</span><span class="status-note">Specifications are preliminary</span></div>
   <header class="nav-wrap">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="UDIR home"><span class="brand-mark">U</span><span>UDIR</span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
         <a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a>
         <a class="nav-cta" href="#contact">Discuss your application <span>↗</span></a>
@@ -55,6 +56,7 @@
 
     <section id="applications" class="applications section-pad dark">
       <div class="section-head reveal"><div><p class="section-kicker">Applications & use cases</p><h2>Identity, where<br>work happens.</h2></div><p>Six environments. One adaptable hardware platform. Every scenario below is a planned application subject to implementation, local regulation and partner validation.</p></div>
+      <p class="swipe-hint" aria-hidden="true">Swipe to explore <span>→</span></p>
       <div class="use-grid">
         <article class="use-card wide vending reveal"><div class="scene"><div class="machine"><span>18+</span><b>VERIFY AGE</b><i></i></div><div class="phone">✓</div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">01</span><h3>Age-restricted vending</h3><p>Privacy-preserving age-threshold checks for unattended retail — without unnecessarily disclosing name or date of birth.</p><ul><li>Automated verification</li><li>Existing equipment integration</li><li>Local-first processing</li></ul></div></article>
         <article class="use-card rental reveal"><div class="scene"><div class="car"><i></i><i></i></div><div class="key">KEY<br>READY</div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">02</span><h3>Car rental & sharing</h3><p>Supported mobile driving licence checks for automated vehicle collection and 24/7 key dispensing.</p><ul><li>Licence attributes</li><li>Unattended collection</li></ul></div></article>
