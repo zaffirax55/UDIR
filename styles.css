@@ -2,3 +2,29 @@
 @media(max-width:900px){.nav-links{position:fixed;inset:72px 12px auto;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;display:none;flex-direction:column;align-items:stretch;box-shadow:0 20px 50px #0002}.nav-links.open{display:flex}.menu-toggle{display:block;width:38px;height:38px}.menu-toggle span{display:block;width:22px;height:1px;background:#111;margin:6px}.hero{grid-template-columns:1fr;min-height:auto;padding-top:48px}.hero-visual{min-height:500px}.hero-meta{grid-template-columns:1fr 1fr}.intro-grid,.section-head,.faq-grid,.contact{grid-template-columns:1fr;gap:34px}.use-card.wide{grid-template-columns:1fr}.wide .scene{min-height:350px}.arch-grid{grid-template-columns:1fr}.principle-grid{grid-template-columns:1fr 1fr}.section-pad{padding-top:80px;padding-bottom:80px}.tab-panels>div{grid-template-columns:1fr;gap:25px}.faq-grid{gap:50px}}
 @media(max-width:620px){.status-note{display:none}.nav{padding:0 18px}.hero{padding:38px 18px 22px}.hero h1{font-size:53px}.hero-actions{align-items:flex-start;flex-direction:column;gap:9px}.hero-visual{min-height:360px}.device-frame{border-radius:26px}.float-tag{display:none}.section-pad{padding:64px 18px}.process{grid-template-columns:1fr;padding:12px}.process>i{transform:rotate(90deg);justify-self:center}.use-grid{grid-template-columns:1fr}.use-card,.use-card.wide{grid-column:auto;min-height:auto;display:flex}.wide .scene,.scene{min-height:310px}.section-head{margin-bottom:38px}.section-head h2,.intro h2,.faq h2,.contact h2{font-size:43px}.tab-list{scrollbar-width:none}.tab-panels>div{padding:28px 20px}.spec-table p{grid-template-columns:1fr;gap:5px}.chip-grid,.check-grid{grid-template-columns:1fr}.arch-card{padding:23px}.arch-card h3{font-size:28px}.diagram{grid-template-columns:1fr;gap:8px}.diagram i{transform:rotate(90deg);justify-self:center}.node{width:100%}.arch-card>p{min-height:auto}.sdk-row{align-items:flex-start;gap:24px;flex-direction:column}.sdk-row div{gap:13px}.principle-grid{grid-template-columns:1fr}.principle-grid article{min-height:auto}.principle-grid h3{margin-top:28px}.field-row{grid-template-columns:1fr}.contact-form{padding:22px}.contact{gap:46px}footer{flex-direction:column;gap:22px}.hero-meta{margin-top:32px}.machine{transform:scale(.82)}.car{transform:scale(.75);left:-8%}.tablet{transform:scale(.8)}.scene-device{transform:scale(.78);right:5%}}
 
+/* Final compact editorial layer */
+body{font-family:"Instrument Sans",Arial,sans-serif}
+.hero h1 em,.contact h2 em{font-family:"Instrument Serif",Georgia,serif}
+.contact-form input,.contact-form select,.contact-form textarea{font-family:"Instrument Sans",Arial,sans-serif}
+.scroll-progress{position:absolute;left:0;bottom:-1px;width:0;height:2px;background:var(--blue);transform-origin:left;transition:width .08s linear}
+.hero{min-height:min(760px,calc(100vh - 102px))}
+.device-frame{animation:device-float 7s ease-in-out infinite}
+.swipe-hint{display:none}
+@keyframes device-float{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(-1deg) translateY(-10px)}}
+@media(prefers-reduced-motion:reduce){.device-frame{animation:none}}
+@media(max-width:620px){
+  .applications{overflow:hidden}
+  .applications .section-head{margin-bottom:20px}
+  .swipe-hint{display:flex;justify-content:space-between;align-items:center;margin:0 0 16px;color:#969aa3;font:10px DM Mono,monospace;text-transform:uppercase;letter-spacing:.1em}
+  .swipe-hint span{color:#6a9aff;font-size:18px}
+  .use-grid{display:grid;grid-auto-flow:column;grid-auto-columns:88%;grid-template-columns:none;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;padding:0 18px 18px;margin:0 -18px;scrollbar-width:none}
+  .use-grid::-webkit-scrollbar{display:none}
+  .use-card,.use-card.wide{scroll-snap-align:start;scroll-snap-stop:always;min-height:515px}
+  .wide .scene,.scene{min-height:280px}
+  .use-copy,.wide .use-copy{padding:24px}
+  .use-card h3{font-size:25px}
+  .section-pad{padding-top:58px;padding-bottom:58px}
+  .hero{padding-top:32px}
+  .hero-visual{min-height:330px}
+}
+
