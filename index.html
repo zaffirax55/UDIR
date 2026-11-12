@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d0f">
+  <meta name="description" content="UDIR is a universal digital identity reader concept for secure, local-first identity verification.">
+  <title>UDIR — Universal Digital Identity Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="status-strip"><span>Product concept</span><span class="pulse"></span><span>In development</span><span class="status-note">Specifications are preliminary</span></div>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="UDIR home"><span class="brand-mark">U</span><span>UDIR</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#contact">Discuss your application <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Universal Digital Identity Reader</p>
+        <h1>Trust moves<br><em>off-screen.</em></h1>
+        <p class="lede">A compact hardware platform designed to verify digital identity credentials where people and machines meet — locally, privately and without mandatory cloud processing.</p>
+        <div class="hero-actions"><a class="button primary" href="#applications">Explore applications <span>↓</span></a><a class="button text" href="#specifications">View planned platform <span>→</span></a></div>
+        <div class="hero-meta"><div><strong>NFC</strong><span>ISO/IEC 14443 A/B</span></div><div><strong>BLE</strong><span>Low Energy 5.x target</span></div><div><strong>QR</strong><span>Optical scanner</span></div><div><strong>USB-C</strong><span>Host interface</span></div></div>
+      </div>
+      <div class="hero-visual reveal" data-delay="1">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="device-frame"><img src="assets/udir-device.png" alt="Concept render showing the UDIR digital identity reader from multiple angles"><div class="scan-line"></div></div>
+        <span class="float-tag tag-a">Local verification</span><span class="float-tag tag-b">Selective disclosure</span>
+      </div>
+    </section>
+
+    <section class="intro section-pad">
+      <p class="section-kicker reveal">One device. Multiple digital identities.</p>
+      <div class="intro-grid">
+        <h2 class="reveal">A physical bridge for the wallet era.</h2>
+        <div class="intro-copy reveal"><p>UDIR is being designed for OEMs, system integrators and professional teams that need to bring supported digital credentials into real-world workflows.</p><p>It establishes a secure session with a user’s smartphone, receives authorised credential data and passes a verification result to the connected system.</p></div>
+      </div>
+      <div class="process reveal" aria-label="Three-step verification process">
+        <div><span>01</span><strong>Connect</strong><p>NFC, BLE or QR-based device engagement.</p></div><i>→</i><div><span>02</span><strong>Verify</strong><p>Credential proofs checked locally where supported.</p></div><i>→</i><div><span>03</span><strong>Integrate</strong><p>Authorised result returned to the host system.</p></div>
+      </div>
+    </section>
+
+    <section id="applications" class="applications section-pad dark">
+      <div class="section-head reveal"><div><p class="section-kicker">Applications & use cases</p><h2>Identity, where<br>work happens.</h2></div><p>Six environments. One adaptable hardware platform. Every scenario below is a planned application subject to implementation, local regulation and partner validation.</p></div>
+      <div class="use-grid">
+        <article class="use-card wide vending reveal"><div class="scene"><div class="machine"><span>18+</span><b>VERIFY AGE</b><i></i></div><div class="phone">✓</div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">01</span><h3>Age-restricted vending</h3><p>Privacy-preserving age-threshold checks for unattended retail — without unnecessarily disclosing name or date of birth.</p><ul><li>Automated verification</li><li>Existing equipment integration</li><li>Local-first processing</li></ul></div></article>
+        <article class="use-card rental reveal"><div class="scene"><div class="car"><i></i><i></i></div><div class="key">KEY<br>READY</div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">02</span><h3>Car rental & sharing</h3><p>Supported mobile driving licence checks for automated vehicle collection and 24/7 key dispensing.</p><ul><li>Licence attributes</li><li>Unattended collection</li></ul></div></article>
+        <article class="use-card hotel reveal"><div class="scene"><div class="door"><i>407</i></div><div class="terminal">CHECK<br>IN</div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">03</span><h3>Hospitality check-in</h3><p>Digital guest verification for self-service reception, registration and key issuance workflows.</p><ul><li>Faster arrival</li><li>PMS-ready concept</li></ul></div></article>
+        <article class="use-card wide inspection reveal"><div class="scene"><div class="landscape"></div><div class="tablet"><b>VERIFIED</b><span>Credential integrity</span><span>Issuer signature</span><span>Trust chain</span></div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">04</span><h3>Mobile identity inspection</h3><p>A planned battery-powered configuration for professional checks beyond reliable network coverage.</p><ul><li>Offline-capable workflows</li><li>Field-oriented enclosure</li><li>Companion device concept</li></ul></div></article>
+        <article class="use-card banking reveal"><div class="scene"><div class="bank-screen"><b>IDENTITY</b><span>Session secured</span><i></i></div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">05</span><h3>Banking & finance</h3><p>A hardware interface for onboarding kiosks and branch terminals. UDIR is a component — not a standalone KYC or AML solution.</p><ul><li>Verified attributes</li><li>Flexible host integration</li></ul></div></article>
+        <article class="use-card access reveal"><div class="scene"><div class="gate"><i></i><i></i><i></i></div><div class="badge">ACCESS<br><b>GRANTED</b></div><div class="scene-device">U</div></div><div class="use-copy"><span class="num">06</span><h3>Access & credentials</h3><p>Verify supported identity, professional qualifications or authorisation attributes before the host decides access.</p><ul><li>Existing control systems</li><li>Professional attributes</li></ul></div></article>
+      </div>
+    </section>
+
+    <section id="specifications" class="specs section-pad">
+      <div class="section-head reveal"><div><p class="section-kicker">Technical specifications</p><h2>Planned platform,<br>made legible.</h2></div><p>Targets below describe the concept under development. Final hardware, compatibility and conformance depend on engineering and interoperability testing.</p></div>
+      <div class="spec-shell reveal">
+        <div class="tab-list" role="tablist" aria-label="Specification categories">
+          <button role="tab" aria-selected="true" aria-controls="hardware" id="tab-hardware">Hardware</button><button role="tab" aria-selected="false" aria-controls="standards" id="tab-standards">Standards</button><button role="tab" aria-selected="false" aria-controls="security" id="tab-security">Security</button><button role="tab" aria-selected="false" aria-controls="compatibility" id="tab-compatibility">Integration</button><button role="tab" aria-selected="false" aria-controls="environmental" id="tab-environmental">Environmental</button>
+        </div>
+        <div class="tab-panels">
+          <div role="tabpanel" id="hardware" aria-labelledby="tab-hardware"><div class="spec-title"><span>01</span><h3>Hardware interfaces</h3><p>Core connectivity planned for the base platform.</p></div><div class="spec-table"><p><span>NFC</span><strong>ISO/IEC 14443 Type A/B</strong></p><p><span>Bluetooth</span><strong>BLE 5.x target · GATT</strong></p><p><span>QR scanner</span><strong>Integrated optical scanner</strong></p><p><span>Host</span><strong>USB-C · USB 2.0 HS target</strong></p><p><span>Platform</span><strong>Embedded Linux</strong></p><p><span>Security hardware</span><strong>TPM 2.0 or Secure Element</strong></p></div></div>
+          <div role="tabpanel" id="standards" aria-labelledby="tab-standards" hidden><div class="spec-title"><span>02</span><h3>Identity standards</h3><p>Planned support; profile coverage remains to be confirmed.</p></div><div class="chip-grid"><span>EUDI ARF verifier profiles</span><span>ISO/IEC 18013-5</span><span>ISO/IEC 18013-7</span><span>OpenID4VP 1.0</span><span>ISO mdoc</span><span>SD-JWT VC</span><span>CBOR / COSE</span><span>X.509 / PKI</span></div></div>
+          <div role="tabpanel" id="security" aria-labelledby="tab-security" hidden><div class="spec-title"><span>03</span><h3>Security architecture</h3><p>Planned controls for a local-first verification design.</p></div><div class="check-grid"><span>On-device verification</span><span>Secure Boot</span><span>Signed firmware updates</span><span>Protected key storage</span><span>Local trust store</span><span>Chain validation</span><span>Session binding</span><span>Replay protection</span><span>Attribute minimisation</span><span>Diagnostic event logging</span></div></div>
+          <div role="tabpanel" id="compatibility" aria-labelledby="tab-compatibility" hidden><div class="spec-title"><span>04</span><h3>Host integration</h3><p>A documented USB API and optional SDK are planned.</p></div><div class="spec-table"><p><span>Windows 10 / 11</span><strong>USB API and SDK</strong></p><p><span>Windows IoT</span><strong>USB API and SDK</strong></p><p><span>Linux / Embedded Linux</span><strong>USB API and SDK</strong></p><p><span>Android</span><strong>USB Host and SDK</strong></p><p><span>Languages</span><strong>C/C++ · C#/.NET · Python</strong></p></div></div>
+          <div role="tabpanel" id="environmental" aria-labelledby="tab-environmental" hidden><div class="spec-title"><span>05</span><h3>Environmental targets</h3><p>Final ratings require validation in a sealed production assembly.</p></div><div class="spec-table"><p><span>Enclosure</span><strong>Metal / reinforced polymer</strong></p><p><span>Protection</span><strong>IP66 target</strong></p><p><span>Temperature</span><strong>−20°C to +60°C target</strong></p><p><span>Mounting</span><strong>Panel / wall / kiosk</strong></p><p><span>Power</span><strong>USB 5 V · optional battery</strong></p><p><span>Outdoor installation</span><strong>Planned</strong></p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="integration" class="integration section-pad blue">
+      <div class="section-head reveal"><div><p class="section-kicker">Integration & SDK</p><h2>Choose where<br>verification lives.</h2></div><p>Two architecture paths are planned on the same hardware platform, giving integrators control over data flow and host responsibilities.</p></div>
+      <div class="arch-grid">
+        <article class="arch-card reveal"><div class="arch-top"><span>Mode 01</span><small>Lower host complexity</small></div><h3>Embedded Verification</h3><p>Credential processing and cryptographic verification take place inside UDIR. The host receives authorised results through a documented USB command protocol.</p><div class="diagram"><div class="node phone-node">Wallet<br><small>credential</small></div><i>BLE / NFC / QR</i><div class="node active-node">UDIR<br><small>verify locally</small></div><i>USB</i><div class="node">Host<br><small>use result</small></div></div><ul><li>No mandatory host verification engine</li><li>Minimised credential handling on host</li><li>Session, status and diagnostics commands</li></ul></article>
+        <article class="arch-card reveal"><div class="arch-top"><span>Mode 02</span><small>Maximum application control</small></div><h3>Host Verification</h3><p>UDIR provides NFC, BLE and QR communication while supported credential processing is performed by software running on the host.</p><div class="diagram"><div class="node phone-node">Wallet<br><small>credential</small></div><i>BLE / NFC / QR</i><div class="node">UDIR<br><small>transport</small></div><i>USB</i><div class="node active-node">Host<br><small>SDK verify</small></div></div><ul><li>Planned C/C++, C#/.NET and Python SDKs</li><li>Android, Windows and Linux examples</li><li>Customer-controlled verification workflow</li></ul></article>
+      </div>
+      <div class="sdk-row reveal"><span>Planned developer surface</span><div><b>C / C++</b><b>C# / .NET</b><b>Python</b><b>Android</b><b>USB protocol</b></div></div>
+    </section>
+
+    <section class="principles section-pad">
+      <div class="section-head reveal"><div><p class="section-kicker">Design principles</p><h2>Less data.<br>More control.</h2></div></div>
+      <div class="principle-grid"><article class="reveal"><span>01</span><h3>Local-first</h3><p>Designed to verify supported credentials directly on the device, without a mandatory external verification server.</p></article><article class="reveal"><span>02</span><h3>Privacy by design</h3><p>Request only the attributes a workflow needs, including age-threshold outcomes where the credential supports them.</p></article><article class="reveal"><span>03</span><h3>Offline capable</h3><p>Continue selected workflows without continuous connectivity, subject to trust-data freshness and credential status.</p></article><article class="reveal"><span>04</span><h3>OEM ready</h3><p>Compact construction, standard interfaces and configurable software for new and existing equipment.</p></article></div>
+    </section>
+
+    <section id="faq" class="faq section-pad dark">
+      <div class="faq-grid"><div class="reveal"><p class="section-kicker">FAQ</p><h2>Before the<br>first pilot.</h2><p class="muted">Clear answers about what UDIR is — and what it is not yet.</p></div><div class="accordion reveal">
+        <details><summary>Is UDIR available to purchase?<span>+</span></summary><p>Not yet. UDIR is currently a product concept in development and market validation.</p></details>
+        <details><summary>Does it require internet or a cloud service?<span>+</span></summary><p>UDIR is designed for offline verification in compatible scenarios and without a mandatory cloud service. Periodic connectivity may still be needed for trust updates or credential-status checks.</p></details>
+        <details><summary>Are the listed standards already certified?<span>+</span></summary><p>No certification is claimed. Support and conformance will be confirmed through development, interoperability testing and regulatory assessment.</p></details>
+        <details><summary>Can it integrate with existing equipment?<span>+</span></summary><p>That is a primary design objective. The concept uses USB-C, a documented device protocol and an optional SDK to fit OEM workflows.</p></details>
+        <details><summary>Can it perform age verification?<span>+</span></summary><p>Privacy-preserving age-threshold verification is planned where supported by the credential. Deployment remains subject to applicable national regulation.</p></details>
+      </div></div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="contact-copy reveal"><p class="section-kicker">OEM & technology partnerships</p><h2>Shape the<br><em>first deployment.</em></h2><p>We’re gathering requirements from equipment manufacturers, integrators and organisations exploring digital identity in physical environments.</p><div class="contact-notes"><span>Pilot requirements</span><span>OEM integration</span><span>Technical partnerships</span></div></div>
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="field-row"><label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label></div>
+        <div class="field-row"><label>Company<input name="company" autocomplete="organization" required placeholder="Company name"></label><label>Application<select name="application" required><option value="">Select use case</option><option>Vending & retail</option><option>Car rental & sharing</option><option>Hospitality</option><option>Mobile inspection</option><option>Banking & finance</option><option>Access control</option><option>Other</option></select></label></div>
+        <label>What do you need UDIR to do?<textarea name="message" required rows="4" placeholder="Tell us about the workflow, environment and expected scale."></textarea></label>
+        <button class="button primary" type="submit">Prepare enquiry <span>↗</span></button>
+        <p class="form-state" id="form-state" aria-live="polite">This concept site has no mail backend. Submitting will prepare an email in your mail app — nothing is sent automatically.</p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">U</span><span>UDIR</span></a><p>Universal Digital Identity Reader<br><small>Product concept · In development</small></p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
+
